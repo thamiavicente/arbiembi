@@ -1,0 +1,13 @@
+.navbar-brand {
+    width: 15%;
+}
+
+.card {
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+.card .card-img {
+    width: 100%;
+    box-sizing: border-box;
+}

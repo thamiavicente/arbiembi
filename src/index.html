@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>ArBiemBi</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS project file -->
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="w-100 navbar-brand-img" src="assets/image/Airbnb-Logo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Near to you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Add dates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Enter the number of guests</a>
+                </li>
+                </ul>
+                <div class="search-container d-flex">
+                    <div class="filter-container">
+                            <input id="filter" class="filter-input form-control me-2" type="search" placeholder="Where do you want to go?" aria-label="Search">
+                    </div>
+                    <button id="search-button" class="search-button btn btn-outline-success" type="submit">Search</button>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="card-wrapper container">
+        <div class="card-container row justify-content-between"></div>
+    </div>
+
+    <div class="pagination-wrapper">
+        <div class="pagination"></div>
+    </div>
+
+    <div id="map"></div>
+    <!-- Script Google Maps -->
+    <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIvcx5cy5PABB0o2AqygXFbYCLQUmmFeM&callback=initMap">
+    </script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.slim.js"></script>
+    <!-- Popper.js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- JS project file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
